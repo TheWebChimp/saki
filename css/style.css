@@ -1,0 +1,232 @@
+/**
+ * style.css
+ */
+
+/* 	    __  ___      __    _ __
+	   /  |/  /___  / /_  (_) /__
+	  / /|_/ / __ \/ __ \/ / / _ \
+	 / /  / / /_/ / /_/ / / /  __/
+	/_/  /_/\____/_.___/_/_/\___/
+	                               */
+
+/* Generales */
+/*------------------------------------------------------------------------------------------------*/
+
+body {
+
+	background: #FFF;
+	font-size: 13px;
+}
+
+header{
+
+	background: #192024;
+	padding: 10px;
+}
+
+header .logo{
+
+	display: block;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
+footer{
+
+	background: #192024;
+	color: white;
+}
+
+footer a,
+footer a:hover {
+
+	font-family: 'Oswald';
+	font-size: 1em;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: white;
+}
+
+.button.button-small {
+
+	/**/
+}
+
+.section-title {
+
+	font-family: 'Oswald';
+	font-size: 1.4em;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #192024;
+	margin-bottom: 20px;;
+}
+
+.section-title a {
+
+	color: #405362;
+}
+
+.section-title a:hover {
+
+	color: #354553;
+}
+
+.titulo-bloque{
+
+	font-family: 'Oswald';
+	font-size: 1.5em;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #192024;
+	margin-bottom: 5px;
+}
+
+.pattern-menu{
+
+	margin-bottom: 20px;
+}
+
+.pattern-menu ul{
+
+	/*padding: 10px;*/
+}
+
+.pattern-menu ul li{
+
+	float: left;
+	margin-right: 5px;
+}
+
+.pattern-menu ul li a{
+
+	display: block;
+	padding: 10px;
+	border: 1px solid #DDD;
+	border-radius: 5px;
+	font-weight: 300;
+	color: #333;
+	text-decoration: none;
+
+	-webkit-transition: all .5s ease;
+	   -moz-transition: all .5s ease;
+	    -ms-transition: all .5s ease;
+	     -o-transition: all .5s ease;
+	        transition: all .5s ease;
+}
+
+.pattern-menu ul li:hover a{
+
+	background: #EEE;
+	border: 1px solid #EEE;
+}
+
+.pattern-menu ul li.selected a{
+
+	background: #DDD;
+	color: #333;
+}
+
+.pattern-desc{
+
+	margin-bottom: 20px;
+}
+
+.tab{ padding: 10px; display: none; }
+
+#the-pattern{
+
+	display: block;
+	margin-bottom: 50px;
+	z-index: 100;
+}
+
+.pattern-page pre {
+
+	tab-size: 4;
+}
+
+.patterns-list .patterns-item {
+
+	overflow: hidden;
+	margin-bottom: 10px;
+	max-width: 100%;
+}
+
+.patterns-list .patterns-item .pattern-thumbnail {
+
+	border-radius: 7px 7px 0 0;
+	background: #CCC;
+	overflow: hidden;
+}
+
+.patterns-list .patterns-item .pattern-thumbnail img {
+
+	/* transition */
+	-webkit-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	transition: 0.5s all;
+}
+
+.patterns-list .patterns-item:hover .pattern-thumbnail img {
+
+	/* transform */
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+.patterns-list .patterns-item .pattern-details {
+
+	background: #333;
+	padding: 10px;
+	color: #DDD;
+	font-size: 12px;
+	font-family: 'Open Sans Condensed';
+	text-transform: uppercase;
+	height: 70px;
+	border-radius: 0 0 7px 7px;
+}
+
+.patterns-list .patterns-item .pattern-details h2 {
+
+	font-family: 'Oswald';
+	font-weight: 400;
+	font-size: 1.15em;
+	color: #FFF;
+}
+
+.patterns-list .patterns-item .pattern-details a {
+
+	color: #FFF;
+}
+
+
+/* 	    ____            __   __
+	   / __ \___  _____/ /__/ /_____  ____
+	  / / / / _ \/ ___/ //_/ __/ __ \/ __ \
+	 / /_/ /  __(__  ) ,< / /_/ /_/ / /_/ /
+	/_____/\___/____/_/|_|\__/\____/ .___/
+	                              /_/       */
+
+
+@media (min-width: 1000px) {
+/*================================================================================================*/
+
+.tab{ padding: 0; }
+
+
+header .logo{
+
+	display: block;
+	margin: 0;
+}
+
+.patterns-list .patterns-item {
+
+	max-width: none;
+}
+
+/*================================================================================================*/
+}

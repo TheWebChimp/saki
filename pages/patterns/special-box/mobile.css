@@ -1,0 +1,46 @@
+.special-boxes{
+
+	font-size: 1em;
+}
+
+.special-boxes .special-box{
+
+	text-align: center;
+	margin-bottom: 20px;
+	padding: 20px;
+	border: 1px solid #CCC;
+	border-radius: 5px;
+}
+
+.special-boxes .special-box-title{
+
+	font-size: 1.8em;
+	margin-bottom: 20px;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #666;
+}
+
+.special-boxes .special-box-copy{
+
+	font-size: 1.1em;
+	margin-bottom: 20px;
+	min-height: 50px;
+	color: #333;
+}
+
+.special-boxes .special-box-icon{
+
+	font-size: 2.5em;
+	color: white;
+	text-shadow: 0 0 3px rgba(0,0,0,0.5);
+	line-height: 50px;
+	width: 50px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	padding: 20px;
+	box-shadow: 0 0 0 10px #fff, 0 0 0 11px rgba(144,144,144,0.25);
+	background: #629dd1;
+	border-radius: 100%;
+}

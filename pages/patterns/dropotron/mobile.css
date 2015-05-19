@@ -1,0 +1,69 @@
+.dropotron{
+
+	border-radius: 5px;
+	background: #EEE;
+	position: relative;
+	min-height: 50px;
+}
+
+.dropotron .hamburger{
+
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	font-size: 2em;
+	line-height: 30px;
+}
+
+.dropotron .hamburger a{
+
+	color: #333;
+	text-decoration: none;
+}
+
+.dropotron .menu{
+
+	max-height: 0;
+	overflow: hidden;
+	padding-top: 50px;
+
+	-webkit-transition: max-height 1s ease;
+	   -moz-transition: max-height 1s ease;
+		-ms-transition: max-height 1s ease;
+		 -o-transition: max-height 1s ease;
+			transition: max-height 1s ease;
+}
+
+.dropotron .menu.open{
+
+	max-height: 500px;
+}
+
+.dropotron .menu li a{
+
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	color: #333;
+	border-top: 1px solid #CCC;
+
+	-webkit-transition: all .25s ease;
+	   -moz-transition: all .25s ease;
+		-ms-transition: all .25s ease;
+		 -o-transition: all .25s ease;
+			transition: all .25s ease;
+}
+
+.dropotron .menu li a:hover{
+
+	background: #f4715c;
+	color: white;
+}
+
+.dropotron .submenu a{
+
+	padding-left: 20px;
+}
+
+.dropotron .submenu-level2 li a{ padding-left: 20px; }
+.dropotron .submenu-level3 li a{ padding-left: 40px; }

@@ -1,0 +1,89 @@
+/* Mobile Stuff */
+
+.tabs{
+
+	position: relative;
+}
+
+.tabs .hamburger{
+
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	z-index: 10;
+}
+
+.tabs .hamburger a{
+
+	color: #333;
+	text-decoration: none;
+	font-size: 2.5em;
+}
+
+.tabs .tab-selected{
+
+	background: #BBB;
+	padding: 20px;
+}
+
+/* General Stuff */
+
+.tabs ul{
+
+	overflow: hidden;
+	max-height: 0;
+
+	-webkit-transition: max-height 1s ease;
+	   -moz-transition: max-height 1s ease;
+	    -ms-transition: max-height 1s ease;
+	     -o-transition: max-height 1s ease;
+	        transition: max-height 1s ease;
+}
+
+.tabs ul.open{
+
+	max-height: 400px;
+}
+
+.tabs li{
+
+	display: block;
+	float: none;
+	margin: 0;
+}
+
+.tabs li a{
+
+	border-radius: 0;
+	background: #EEE;
+	color: #333;
+
+	-webkit-transition: all .5s ease;
+	   -moz-transition: all .5s ease;
+	    -ms-transition: all .5s ease;
+	     -o-transition: all .5s ease;
+	        transition: all .5s ease;
+}
+
+.tabs li a:hover{
+
+	background: #DDD;
+}
+
+.tabs li.selected a{
+
+	background: #CCC;
+}
+
+.tab-sections .section{
+
+	display: none;
+	height: 100px;
+	background: #CCC;
+	padding: 10px;
+}
+
+.tab-sections .section:first-child{
+
+	display: block;
+}

@@ -1,0 +1,7 @@
+{
+	"description": "Pattern Description",
+	"scripts": {
+		"imagesloaded": "https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.1.8/imagesloaded.pkgd.min.js",
+		"isotope": "//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.0.0/isotope.pkgd.min.js"
+	}
+}

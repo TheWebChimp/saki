@@ -1,0 +1,40 @@
+.loop-article{
+
+	font-size: 15px;
+	overflow: hidden;
+	text-align: left;
+	line-height: 1.5;
+	color: #6c6c6c;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 10px 0;
+}
+
+.loop-article .post-copy{
+
+	margin-left: 90px;
+}
+
+.loop-article-date {
+
+	width: 40px;
+	display: block;
+	float: left;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 16px;
+	border-right: 1px solid #E5E5E5;
+	padding: 16px;
+	color: #2D2D2D;
+
+}
+
+.loop-article-date .day{
+
+	margin: 0;
+	padding: 0;
+	display: block;
+	margin-top: -5px;
+	font-weight: 700;
+}
+

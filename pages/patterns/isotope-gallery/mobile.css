@@ -1,0 +1,64 @@
+.isotope-gallery .gallery-image{
+
+	float: left;
+	width: 100%;
+	padding: 5px;
+	cursor: pointer;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.isotope-gallery .gallery-image .icon{
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	font-size: 1.5em;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	line-height: 40px;
+	margin-left: -20px;
+	margin-top: -20px;
+	text-align: center;
+	background: rgba(255,255,255,0.5);
+	opacity: 0;
+	z-index: 10;
+
+	-webkit-transition: all .5s ease;
+	   -moz-transition: all .5s ease;
+	    -ms-transition: all .5s ease;
+	     -o-transition: all .5s ease;
+	        transition: all .5s ease;
+}
+
+.isotope-gallery .gallery-image:hover .icon{
+
+	opacity: 1;
+}
+
+.isotope-gallery .gallery-image img{
+
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+
+	-webkit-transition: all .5s ease;
+	   -moz-transition: all .5s ease;
+	    -ms-transition: all .5s ease;
+	     -o-transition: all .5s ease;
+	        transition: all .5s ease;
+}
+
+.isotope-gallery .gallery-image:hover img{
+
+	opacity: 0.8;
+}
+
+@media (min-width: 500px) {
+
+	.isotope-gallery .gallery-image{
+		width: 50%;
+	}
+}
