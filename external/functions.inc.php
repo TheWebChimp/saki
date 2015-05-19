@@ -16,6 +16,7 @@
 	// Plugins
 	$site->registerStyle('highlight.js', '//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css' );
 	$site->registerStyle('magnific-popup', '//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/0.9.9/magnific-popup.css' );
+	$site->registerStyle('hjs.monokai-sublime', $site->baseUrl('/css/hjs.monokai-sublime.css') );
 
 	// Structure
 	$site->registerStyle('reset', $site->baseUrl('/css/reset.css') );
@@ -33,6 +34,7 @@
 		// Plugins
 		'highlight.js',
 		'magnific-popup',
+		'hjs.monokai-sublime',
 
 		// Structure
 		'reset',
