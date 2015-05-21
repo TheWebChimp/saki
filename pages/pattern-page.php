@@ -5,14 +5,31 @@
 		exit;
 	}
 
+	$dependencies = array();
+	$has_dependencies = false;
+
 	foreach ($pattern->styles as $slug => $style) {
 		$site->registerStyle($slug, $style);
 		$site->enqueueStyle($slug);
+		if ($slug != 'mobile-pattern' && $slug != 'desktop-pattern') {
+			$dependencies[$slug] = array(
+				'type' => 'css',
+				'link' => $style
+			);
+			$has_dependencies = true;
+		}
 	}
 
 	foreach ($pattern->scripts as $slug => $script) {
 		$site->registerScript($slug, $script);
 		$site->enqueueScript($slug);
+		if ($slug != 'script-pattern') {
+			$dependencies[$slug] = array(
+				'type' => 'js',
+				'link' => $script
+			);
+			$has_dependencies = true;
+		}
 	}
 
 	//
@@ -33,6 +50,7 @@
 						<li><a href="#code-html">HTML</a></li>
 						<?php if($pattern->hasCSS): ?><li><a href="#code-css">CSS</a></li><?php endif; ?>
 						<?php if($pattern->hasJS): ?><li><a href="#code-js">JS</a></li><?php endif; ?>
+						<?php if($has_dependencies): ?><li><a href="#code-deps">Dependencies</a></li><?php endif; ?>
 					</ul>
 				</nav>
 				<!--  -->
@@ -62,6 +80,26 @@
 					<a href="#" data-zclip="#code-js" class="button button-small pull-right">Copiar</a>
 					<h2 class="titulo-bloque">JS</h2>
 					<pre><code class="js"><?php @include $site->baseDir("/pages/patterns/{$pattern->slug}/script.js"); ?></code></pre>
+				</div>
+
+				<div id="code-deps" class="tab">
+					<h2 class="titulo-bloque">Dependencies</h2>
+					<table class="table table-hover">
+						<tbody>
+							<?php
+								if ($dependencies):
+									foreach ($dependencies as $slug => $dependency):
+							?>
+								<tr>
+									<td><img src="<?php $site->img("type-{$dependency['type']}.png") ?>" alt="" class="icon"> <?php echo $slug; ?></td>
+									<td><a href="<?php echo $dependency['link']; ?>" target="_blank"><?php echo $dependency['link']; ?></a></td>
+								</tr>
+							<?php
+									endforeach;
+								endif;
+							?>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</div>
