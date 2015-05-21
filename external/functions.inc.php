@@ -9,7 +9,7 @@
 	# Include styles
 
 	// Fonts
-	$site->registerStyle('font-awesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css' );
+	$site->registerStyle('font-awesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css' );
 	$site->registerStyle('google.open-sans', '//fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,800italic,400italic,300italic|Open+Sans+Condensed:300,700,300italic' );
 	$site->registerStyle('google.oswald', '//fonts.googleapis.com/css?family=Oswald:400,700,300' );
 
