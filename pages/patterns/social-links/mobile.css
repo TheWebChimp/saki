@@ -1,0 +1,40 @@
+.social-links {
+
+	list-style-type: none;
+}
+
+.social-links li {
+
+	float: left;
+	margin-right: 5px;
+}
+
+/* A partir de aquí vienen los social links */
+/* ---------------------------------------------------------------------------------------------- */
+
+.social-link {
+
+	display: inline-block;
+	vertical-align: top;
+	zoom: 1; /* Fix for IE7 */
+	*display: inline; /* Fix for IE7 */
+	width: 30px;
+	height: 30px;
+	background-color: #87898B;
+	border-radius: 100%;
+	text-align: center;
+	color: white;
+	line-height: 30px;
+
+	-webkit-transition: all .5s ease;
+	   -moz-transition: all .5s ease;
+		-ms-transition: all .5s ease;
+		 -o-transition: all .5s ease;
+			transition: all .5s ease;
+}
+
+.social-link:hover {
+
+	color: #DDD;
+	background-color: #192024;
+}

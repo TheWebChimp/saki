@@ -1,6 +1,6 @@
 <nav class="primary-menu dropotron">
-
-	<div class="hamburger show-mobile show-tablet" data-target="#dropotron-menu"><a href="#" class="fa fa-navicon"></a></div>
+	<!-- Tha Hanburger -->
+	<div class="hamburger hide-desktop" data-target="#dropotron-menu"><a href="#" class="fa fa-navicon"></a></div>
 
 	<ul id="dropotron-menu" class="menu submenu-level1">
 		<li><a href="#">Home</a></li>
